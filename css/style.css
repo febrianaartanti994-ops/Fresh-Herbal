@@ -1,0 +1,183 @@
+/* ==========================================================================
+   Fresh Herbal Nutrition - Custom Stylesheet
+   Dipakai bersama Bootstrap 5. File ini hanya berisi hal-hal yang TIDAK
+   tersedia langsung dari utility class Bootstrap (warna brand, gradient,
+   pattern, dsb).
+   ========================================================================== */
+
+:root {
+  --brand-green: #1A301A;
+  --brand-green-dark: #0A1F0A;
+  --brand-gold: #C09E38;
+  --brand-gold-light: #D4B45A;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  color: #343a40;
+}
+
+/* ---------- Warna brand (pengganti kelas Tailwind custom) ---------- */
+.text-gold        { color: var(--brand-gold) !important; }
+.bg-gold          { background-color: var(--brand-gold) !important; }
+.border-gold      { border-color: var(--brand-gold) !important; }
+.bg-brand-green   { background-color: var(--brand-green) !important; }
+
+.btn-gold {
+  background-color: var(--brand-gold);
+  border-color: var(--brand-gold);
+  color: #fff;
+}
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: var(--brand-gold-light);
+  border-color: var(--brand-gold-light);
+  color: #fff;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand-logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 4px;
+}
+
+.brand-title {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-link.active-gold {
+  color: var(--brand-gold) !important;
+  border-bottom: 2px solid var(--brand-gold);
+}
+
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+
+/* ---------- Hero Section ---------- */
+.hero-gradient {
+  background-color: var(--brand-green-dark);
+  background-image:
+    url('https://www.transparenttextures.com/patterns/leaf.png'),
+    linear-gradient(180deg, var(--brand-green-dark) 0%, #1A3C1A 100%);
+}
+
+.hero-logo {
+  width: 110px;
+  height: 110px;
+}
+
+.hero-subtitle {
+  letter-spacing: 0.3em;
+  font-weight: 300;
+}
+
+/* ---------- Leaf pattern overlay untuk beberapa section ---------- */
+.leaf-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.leaf-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/leaf.png');
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.leaf-overlay > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Section divider kecil di bawah judul ---------- */
+.section-divider {
+  width: 64px;
+  height: 4px;
+  background-color: var(--brand-gold);
+  margin: 0 auto;
+}
+
+/* ---------- Timeline (Our Story) ---------- */
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background-color: var(--brand-gold);
+  opacity: 0.5;
+}
+
+.timeline-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--brand-gold);
+  border: 4px solid #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+/* ---------- Kartu produk ---------- */
+.product-card {
+  transition: transform 0.2s ease-in-out;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-thumb {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* ---------- Kartu Visi & Misi / Keunggulan ---------- */
+.icon-card {
+  background-color: var(--brand-gold);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/* ---------- Testimoni ---------- */
+.testimonial-image {
+  height: 260px;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .testimonial-image {
+    height: 400px;
+  }
+}
+
+.testimonial-panel {
+  background-color: var(--brand-green);
+  border-radius: 1.5rem;
+}
+
+.testimonial-carousel-caption {
+  background: linear-gradient(to top, rgba(26, 48, 26, 0.85), transparent);
+}
+
+/* ---------- Footer ---------- */
+.footer-icon {
+  width: 16px;
+  filter: invert(1);
+}

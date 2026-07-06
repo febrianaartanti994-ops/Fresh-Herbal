@@ -69,15 +69,16 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
 
+  min-height: 60vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 1rem;
 }
 
 .hero-inner {
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .hero-content {

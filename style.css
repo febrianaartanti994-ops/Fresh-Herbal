@@ -59,19 +59,19 @@ body {
 
 /* ---------- Hero Section ---------- */
 .hero-gradient {
-  min-height: 100vh;
+  min-height: 40vh;
 
   background-image: 
   linear-gradient(to bottom, rgba(26, 48, 26, 0.85), rgba(26, 48, 26, 0.85)),
-  url("src/5.jpg");
+  url("src/ChatGPT\ Image\ Jul\ 6\,\ 2026\,\ 10_55_06\ PM.png");
 
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 
   display: flex;
   align-items: flex-end;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .hero-inner {

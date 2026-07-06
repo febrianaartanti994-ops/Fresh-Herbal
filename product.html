@@ -172,24 +172,37 @@
 
   <!-- ====== TOP APP BAR (sticky) ====== -->
   <header class="fixed-top bg-primary-custom appbar-shadow z-3">
-    <div class="container-fluid px-3">
-      <div class="row align-items-center gx-2" style="height: 64px;">
-        <div class="col-2">
-          <button class="btn btn-link text-white p-1 rounded-circle text-decoration-none" aria-label="Menu">
-            <span class="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-        <div class="col-8 text-center">
-          <span class="font-headline fs-5 text-white tracking-tight" style="letter-spacing: -0.02em;">Fresh Herbal</span>
-        </div>
-        <div class="col-2 text-end">
-          <button class="btn btn-link text-white p-1 rounded-circle text-decoration-none" aria-label="Cart">
-            <span class="material-symbols-outlined">shopping_cart</span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-3 py-2">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand me-3" href="Main.html">
+          <span class="font-headline fs-5 text-white">Fresh Herbal</span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Main.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white active" href="product.html" aria-current="page">Produk</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-link text-white p-1 rounded-circle text-decoration-none" aria-label="Cart">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </button>
+          </div>
         </div>
       </div>
-      <!-- Search bar -->
-      <div class="row pb-2">
+    </nav>
+
+    <div class="container-fluid px-3 pb-2">
+      <div class="row">
         <div class="col-12">
           <div class="position-relative">
             <input class="form-control rounded-4 border border-secondary-subtle bg-white ps-3 pe-5 py-2" type="text" placeholder="Cari produk herbal disini..." style="border-color: #c1c8c1;" />

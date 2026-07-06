@@ -1,9 +1,4 @@
-/* ==========================================================================
-   Fresh Herbal Nutrition - Custom Stylesheet
-   Dipakai bersama Bootstrap 5. File ini hanya berisi hal-hal yang TIDAK
-   tersedia langsung dari utility class Bootstrap (warna brand, gradient,
-   pattern, dsb).
-   ========================================================================== */
+
 
 :root {
   --brand-green: #1A301A;
@@ -64,10 +59,44 @@ body {
 
 /* ---------- Hero Section ---------- */
 .hero-gradient {
-  background-color: var(--brand-green-dark);
-  background-image:
-    url('https://www.transparenttextures.com/patterns/leaf.png'),
-    linear-gradient(180deg, var(--brand-green-dark) 0%, #1A3C1A 100%);
+  min-height: 100vh;
+
+  background-image: 
+  linear-gradient(to bottom, rgba(26, 48, 26, 0.85), rgba(26, 48, 26, 0.85)),
+  url("src/5.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.hero-inner {
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-content {
+  max-width: 640px;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  max-width: 620px;
+  margin-bottom: 0;
 }
 
 .hero-logo {
@@ -78,6 +107,7 @@ body {
 .hero-subtitle {
   letter-spacing: 0.3em;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 /* ---------- Leaf pattern overlay untuk beberapa section ---------- */

@@ -81,9 +81,11 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .product-img {
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
       transition: transform 0.35s ease;
+      padding: 0.75rem;
+      border-radius: 1rem;
     }
     .product-card:hover {
       transform: translateY(-4px) scale(1.01);
@@ -235,13 +237,13 @@
         <button class="btn-outline-category flex-shrink-0">Kapsul</button>
       </section>
 
-      <!-- Product Grid (2 columns) -->
-      <div class="row g-3">
+      <!-- Product Grid -->
+      <div class="row g-4" style="--bs-gutter-x: 20px; --bs-gutter-y: 20px;">
 
         <!-- Product Card 1 -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHJdI8GNpCTF0VkFrf1bOAf0CfHkb43yzO4rwMRJJqbz-iZQsNqL1yMeRxAmgfogkAf84qFgEINcasFqCtOq_L3WHpIS-w1g7zfYCezmfpXgkUv-eCQT1whCGrjsQWbEaTSjGAobLyxM0rKLNCNaOZ7lr0mohK0t1M3EjZSNWMIo6x-aaZ1GZHYv6jlF6yseeKfBYXLjRZTIfDrxkLbAD5k3lHryKMfwbnXolLcnG2qHQtuDUEA1a-4LgfIlC3SKAXBe5ajfvlJJw" class="product-img w-100" alt="Black garlic jar" />
               <span class="badge badge-organic position-absolute top-2 end-2">Organic</span>
             </div>
@@ -259,9 +261,9 @@
         </div>
 
         <!-- Product Card 2 -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwOXWVNZtXgAD2MGKSgw0aiEo8JZLRvQegz2PKuetVZT4j6OBCI--RiYHobX3sGdnVB9jkzPKbX_S3dpxlQuU8cWVm3eeXY3onbR91fbCIZy0yHsFWg0P6W-iOVdaRIBfrBHdalLNsc6n_4Uk-jSvbk2iYjnyRTR8RtYVHHhBzIfU6CQrCu28BaDvLCl7oOQMljbEXRg4psW4MGpw-GE79wT45dKOPGYq92MgFIkzKSPGinUtPngRIILyZ39tBSy5KUuQW_c2DVLg" class="product-img w-100" alt="Black garlic close-up" />
             </div>
             <div class="card-body p-2 d-flex flex-column">
@@ -278,9 +280,9 @@
         </div>
 
         <!-- Product Card 3 -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8QFqY1BU7kH2cH7rfmEmTLxXNvVL59rcRo-6HWZoE9Te_zfFOkMAdnXkT1o0UthV6hXDyctrFdAD2O1PLLjs0EARjnCCun6DBcQf0yRERU7KBXPgCPxHjGdku8JwMG6k4-X30qod-4b8oKXm15c5ZHUA44PVRXzrp9c8Ui095lAeP19r5OQo4_j-3tncScFj5ukTcluu-Uij-RuKlGYGDnoI4fz2QP230gS-4JcVuGI1UGPBWuRNBP-3Z37PN2ua_Meg7-FmOKTs" class="product-img w-100" alt="Stacked black garlic jars" />
             </div>
             <div class="card-body p-2 d-flex flex-column">
@@ -297,9 +299,9 @@
         </div>
 
         <!-- Product Card 4 (Best Seller) -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcrbVfoP3BYJ6IL4xwpNZzkBf7PFmD1bfApi7ikHmWIA5pda8qyXSgnB-lfkjNMaUr0_y5kmftPuXKBDJPwO4Lz-29Wep8PUL-mqIuOPb1yO3E8Ghpm6unp6AenzN9bU6chIWibPpU3RvpkqzfLmTStXbjBzV0ynS8LrTvogQ0P2dXZA-9wNDKXYbhS94mLcKU5C53GHXjnG7PXYMcurvIt-gUTFPX3xtkmxQk0XF-ycDQSD2qemxEgCkRLSu8M_RPDg58tBoRd0M" class="product-img w-100" alt="Black garlic macro" />
               <span class="badge badge-best position-absolute top-2 end-2">Best Seller</span>
             </div>
@@ -317,9 +319,9 @@
         </div>
 
         <!-- Product Card 5 -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr0tm4WJT2QMRGjHBESQjenNJspnMMKaJuPsIUZzJyxWiS7Cwn_gA6cwkadZcvVEdLesSR_cbLmBqUya-syME2YhRklwL-jEYuV0msDg29gNreWFVTt62D9144QqGVFRhaNt0pKW7baeN9w7g_BlVTNMvPmoiPmADPaoBvOkxnVHgGB6pcb-CwhdoJb_aW0loJHOEuSsg5i8e_-QTZuT5Gckm8qm0dO4i5Ag50r45fCxJI-AiIR7salPpJ-45fzuPpZfc4ixjIWTc" class="product-img w-100" alt="Herbal setup with greens" />
             </div>
             <div class="card-body p-2 d-flex flex-column">
@@ -336,9 +338,9 @@
         </div>
 
         <!-- Product Card 6 -->
-        <div class="col-6">
+        <div class="col-6 col-md-4">
           <div class="card h-100 border border-outline rounded-4 overflow-hidden shadow-soft product-card bg-white">
-            <div class="position-relative">
+            <div class="position-relative p-2 pb-0">
               <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx5XWipuy1koMkfnpuEKwvp4RY2ob6jBg69LiyWGn6dCY1Xd8p1kx1x-WbgWVjRpwOkoxRt6cpQ2FbeoWdsIE1f-gZkUVfLIRPQPo0Lm6ZEmLOtsGqylKziv5C-nEeWsATcsnTLMH3ebOkv2SnQGur237Rvjz2516qCtwnSKMHusUisEDBijx3RxZOGaNJiaEM5x701kYZJSiGRviOJ0VnnWM85aiHRgocBqPGtJTzA-D7pbQ5FRFf-gdW6vdg4xErZMFJNHVUELg" class="product-img w-100" alt="Modern herbal composition" />
             </div>
             <div class="card-body p-2 d-flex flex-column">

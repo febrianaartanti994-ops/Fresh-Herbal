@@ -33,7 +33,7 @@ body {
 
 /* ---------- Navbar ---------- */
 .navbar-brand-logo {
-  height: 32px;
+  height: 50px;
   width: auto;
   margin-bottom: 4px;
 }
@@ -100,8 +100,8 @@ body {
 }
 
 .hero-logo {
-  width: 110px;
-  height: 110px;
+  width: 150px;
+  height: 150px;
 }
 
 .hero-subtitle {

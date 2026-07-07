@@ -59,29 +59,39 @@ body {
 
 /* ---------- Hero Section ---------- */
 .hero-gradient {
-  min-height: 40vh;
-
-  background-image: 
-  linear-gradient(to bottom, rgba(26, 48, 26, 0.85), rgba(26, 48, 26, 0.85)),
-  url("src/ChatGPT\ Image\ Jul\ 6\,\ 2026\,\ 10_55_06\ PM.png");
-
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   min-height: 60vh;
   display: flex;
   align-items: flex-end;
   padding-bottom: 1rem;
 }
 
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(26, 48, 26, 0.85), rgba(26, 48, 26, 0.85)),
+    url("../src/baner.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 .hero-inner {
+  position: relative;
+  z-index: 1;
   min-height: 50vh;
   display: flex;
   align-items: center;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 640px;
   text-align: left;
 }

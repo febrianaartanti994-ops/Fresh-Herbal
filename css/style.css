@@ -1,5 +1,6 @@
 
 
+/* Styling khusus halaman beranda / landing page */
 :root {
   --brand-green: #1A301A;
   --brand-green-dark: #0A1F0A;
@@ -13,17 +14,17 @@ body {
   color: #343a40;
 }
 
-/* ---------- Warna brand (pengganti kelas Tailwind custom) ---------- */
-.text-gold        { color: var(--brand-gold) !important; }
-.bg-gold          { background-color: var(--brand-gold) !important; }
-.border-gold      { border-color: var(--brand-gold) !important; }
-.bg-brand-green   { background-color: var(--brand-green) !important; }
+.text-gold { color: var(--brand-gold) !important; }
+.bg-gold { background-color: var(--brand-gold) !important; }
+.border-gold { border-color: var(--brand-gold) !important; }
+.bg-brand-green { background-color: var(--brand-green) !important; }
 
 .btn-gold {
   background-color: var(--brand-gold);
   border-color: var(--brand-gold);
   color: #fff;
 }
+
 .btn-gold:hover,
 .btn-gold:focus {
   background-color: var(--brand-gold-light);
@@ -31,7 +32,6 @@ body {
   color: #fff;
 }
 
-/* ---------- Navbar ---------- */
 .navbar-brand-logo {
   height: 50px;
   width: auto;
@@ -57,7 +57,6 @@ body {
   border: 1px solid #fff;
 }
 
-/* ---------- Hero Section ---------- */
 .hero-gradient {
   position: relative;
   isolation: isolate;
@@ -121,7 +120,6 @@ body {
   text-transform: uppercase;
 }
 
-/* ---------- Leaf pattern overlay untuk beberapa section ---------- */
 .leaf-overlay {
   position: relative;
   overflow: hidden;
@@ -141,7 +139,6 @@ body {
   z-index: 1;
 }
 
-/* ---------- Section divider kecil di bawah judul ---------- */
 .section-divider {
   width: 64px;
   height: 4px;
@@ -149,7 +146,6 @@ body {
   margin: 0 auto;
 }
 
-/* ---------- Timeline (Our Story) ---------- */
 .timeline {
   position: relative;
   padding-left: 0;
@@ -176,10 +172,10 @@ body {
   z-index: 1;
 }
 
-/* ---------- Kartu produk ---------- */
 .product-card {
   transition: transform 0.2s ease-in-out;
 }
+
 .product-card:hover {
   transform: translateY(-4px);
 }
@@ -189,14 +185,12 @@ body {
   object-fit: cover;
 }
 
-/* ---------- Kartu Visi & Misi / Keunggulan ---------- */
 .icon-card {
   background-color: var(--brand-gold);
   color: #fff;
   border-radius: 1rem;
 }
 
-/* ---------- Testimoni ---------- */
 .testimonial-image {
   height: 260px;
   object-fit: cover;
@@ -217,7 +211,6 @@ body {
   background: linear-gradient(to top, rgba(26, 48, 26, 0.85), transparent);
 }
 
-/* ---------- Footer ---------- */
 .footer-section {
   position: relative;
   overflow: hidden;
@@ -239,6 +232,30 @@ body {
   inset: 0;
   background: linear-gradient(135deg, rgba(192, 158, 56, 0.16), transparent 55%);
   pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+  .footer-section .row > .col-12 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-contact-list {
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .footer-contact-item {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-bottom-text {
+    border-top: 0 !important;
+    padding-top: 0.5rem;
+  }
 }
 
 .footer-brand-logo {

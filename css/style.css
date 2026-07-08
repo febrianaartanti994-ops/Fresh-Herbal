@@ -218,6 +218,42 @@ body {
 }
 
 /* ---------- Footer ---------- */
+.footer-section {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(192, 158, 56, 0.16), transparent 55%);
+  pointer-events: none;
+}
+
+.footer-brand-logo {
+  height: 40px;
+  width: auto;
+}
+
+.footer-contact-list {
+  width: 100%;
+}
+
+.footer-contact-item {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-contact-item:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateX(2px);
+}
+
 .footer-icon {
   width: 16px;
   filter: invert(1);

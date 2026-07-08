@@ -224,6 +224,15 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.footer-section .col-md-6 {
+  min-height: 100%;
+}
+
+.footer-bottom-text {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .footer-section::before {
   content: "";
   position: absolute;

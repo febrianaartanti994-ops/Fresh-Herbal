@@ -1,4 +1,5 @@
 /* custom overrides & helpers */
+/* Ubah warna latar, font, dan layout halaman */
 body {
   font-family: 'Work Sans', sans-serif;
   background-color: #fcf9f8;
@@ -13,10 +14,12 @@ main.page-content {
     padding-top: 1.5rem;
   }
 }
+/* Ubah tampilan card produk dan gambar */
 .product-card {
   border-radius: 1.2rem;
   overflow: hidden;
   min-height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .product-card .card-body {
   padding: 0.9rem 1rem 1rem;
@@ -105,9 +108,7 @@ main.page-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.product-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+/* Ubah efek hover dan tombol add-to-cart */
 .product-img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -131,6 +132,7 @@ main.page-content {
 .row.g-4 > [class*='col'] > .card {
   width: 100%;
 }
+/* Ubah style tombol add-to-cart */
 .btn-add-cart {
   width: 32px;
   height: 32px;
